@@ -4,12 +4,20 @@ let mult = 1;
 
 console.log(arr);
 
-for (i=0; i<arr.length; i++) {
+// for (i=0; i<arr.length; i++) {
 
-    sum += arr[i];
-    mult *= arr[i];  
+//     sum += arr[i];
+//     mult *= arr[i];  
     
-}
+// }
 
-    console.log(sum);
-    console.log(mult);
+//     console.log(sum);
+//     console.log(mult);
+
+arr.forEach(function (item){
+    sum += item;
+    mult *= item;
+} )
+
+console.log(sum);
+console.log(mult);

@@ -1,6 +1,9 @@
-var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+// (Məs→ input :1, output : Bir)
+
 
 var numbersAsString = [
+  'zero',
   'one',
   'two',
   'three',
@@ -16,16 +19,15 @@ var numbersAsString = [
 var numbers = prompt('Enter a number');
 
 
-function reversedNumber () {
-  return numbers == [...numbersAsString];
-  
+function numberAsWord (num) {
+  return numbersAsString[num];
 }
 
 
 reversedNumber();
 
   console.log(numbers);
-  console.log(numbersAsString);
+  console.log(numberAsWord(numbers));
 
 
 
